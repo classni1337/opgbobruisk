@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opgbobruisk4ever</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <video class="site-background" autoplay muted loop playsinline aria-hidden="true">
+      <source src="site-background.mp4" type="video/mp4" />
+    </video>
+    <div class="site-background-overlay" aria-hidden="true"></div>
+    <div class="heart-layer" aria-hidden="true"></div>
+    <header class="topbar">
+      <div class="brand">Opgbobruisk4ever</div>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#members">Мемберы Бобруйска</a>
+        <a href="#gallery">Архивы Бобруйска</a>
+        <a href="#media">Медиа Бобруйск</a>
+        <a href="https://t.me/supremCOMMRU" target="_blank" rel="noreferrer">Наш тгк</a>
+        <a href="#new-section">???</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <p class="eyebrow">Бобруйск — в сердце</p>
+          <h1 class="hero-title">Opgbobruisk4ever</h1>
+          <p class="subtitle">
+            Память, кадры, эмоции и люди, которые я люблю.
+          </p>
+          <a class="cta" href="https://t.me/supremCOMMRU" target="_blank" rel="noreferrer">тыкни если классный</a>
+        </div>
+      </section>
+
+      <section id="members" class="section">
+        <div class="members-layout">
+          <div class="member-column">
+            <div class="section__header">
+              <p class="label">Команда</p>
+              <h2>Мемберы Бобруйска</h2>
+            </div>
+            <div id="members-list" class="member-list" aria-live="polite"></div>
+          </div>
+
+          <div class="about-column">
+            <div class="about-title">Любимые</div>
+            <div class="about-subtitle">Спасибо за лето</div>
+            <div class="about-photo-wrap">
+              <img id="about-photo" src="" alt="???" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section">
+        <div class="section__header">
+          <p class="label">Архив</p>
+          <h2>Архивы Бобруйска</h2>
+        </div>
+        <div class="scroll-wrapper">
+          <button class="scroll-arrow left" type="button" aria-label="Назад">‹</button>
+          <div id="gallery-list" class="media-strip"></div>
+          <button class="scroll-arrow right" type="button" aria-label="Вперед">›</button>
+        </div>
+      </section>
+
+      <section id="media" class="section">
+        <div class="section__header">
+          <p class="label">Видео</p>
+          <h2>Медиа Бобруйск</h2>
+        </div>
+        <div class="scroll-wrapper">
+          <button class="scroll-arrow left" type="button" aria-label="Назад">‹</button>
+          <div id="video-list" class="video-strip"></div>
+          <button class="scroll-arrow right" type="button" aria-label="Вперед">›</button>
+        </div>
+      </section>
+
+      <div class="love-button-wrap">
+        <a class="cta love-button" href="#new-section">кликни если любишь</a>
+      </div>
+
+      <section id="new-section" class="section new-section">
+        <div class="section__header">
+          <p class="label">???</p>
+          <h2>???</h2>
+        </div>
+        <a class="cta" href="#members">вернуться наверх</a>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
